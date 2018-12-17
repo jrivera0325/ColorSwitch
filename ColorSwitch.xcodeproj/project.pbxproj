@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EBC2070021C72A8A0044329D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC206FF21C72A8A0044329D /* AppDelegate.swift */; };
-		EBC2070221C72A8A0044329D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBC2070121C72A8A0044329D /* GameScene.sks */; };
-		EBC2070421C72A8A0044329D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBC2070321C72A8A0044329D /* Actions.sks */; };
 		EBC2070621C72A8A0044329D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2070521C72A8A0044329D /* GameScene.swift */; };
 		EBC2070821C72A8A0044329D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2070721C72A8A0044329D /* GameViewController.swift */; };
 		EBC2070B21C72A8A0044329D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC2070921C72A8A0044329D /* Main.storyboard */; };
 		EBC2070D21C72A8D0044329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC2070C21C72A8D0044329D /* Assets.xcassets */; };
 		EBC2071021C72A8D0044329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC2070E21C72A8D0044329D /* LaunchScreen.storyboard */; };
+		EBC2071C21C730E40044329D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2071B21C730E40044329D /* Settings.swift */; };
+		EBC2071E21C74C0F0044329D /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2071D21C74C0F0044329D /* MenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBC206FC21C72A8A0044329D /* ColorSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC206FF21C72A8A0044329D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBC2070121C72A8A0044329D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		EBC2070321C72A8A0044329D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		EBC2070521C72A8A0044329D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		EBC2070721C72A8A0044329D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EBC2070A21C72A8A0044329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBC2070C21C72A8D0044329D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC2070F21C72A8D0044329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBC2071121C72A8D0044329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC2071B21C730E40044329D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EBC2071D21C74C0F0044329D /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,49 @@
 		EBC206FE21C72A8A0044329D /* ColorSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				EBC206FF21C72A8A0044329D /* AppDelegate.swift */,
-				EBC2070121C72A8A0044329D /* GameScene.sks */,
-				EBC2070321C72A8A0044329D /* Actions.sks */,
-				EBC2070521C72A8A0044329D /* GameScene.swift */,
+				EBC2071121C72A8D0044329D /* Info.plist */,
+				EBC2071A21C72DBA0044329D /* Assets */,
+				EBC2071921C72D9D0044329D /* Template */,
+				EBC2071821C72D8D0044329D /* Scenes */,
+				EBC2071721C72D700044329D /* ViewController */,
+			);
+			path = ColorSwitch;
+			sourceTree = "<group>";
+		};
+		EBC2071721C72D700044329D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				EBC2070721C72A8A0044329D /* GameViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EBC2071821C72D8D0044329D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EBC2070521C72A8A0044329D /* GameScene.swift */,
+				EBC2071D21C74C0F0044329D /* MenuScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EBC2071921C72D9D0044329D /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				EBC206FF21C72A8A0044329D /* AppDelegate.swift */,
+				EBC2071B21C730E40044329D /* Settings.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		EBC2071A21C72DBA0044329D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				EBC2070921C72A8A0044329D /* Main.storyboard */,
 				EBC2070C21C72A8D0044329D /* Assets.xcassets */,
 				EBC2070E21C72A8D0044329D /* LaunchScreen.storyboard */,
-				EBC2071121C72A8D0044329D /* Info.plist */,
 			);
-			path = ColorSwitch;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC2070B21C72A8A0044329D /* Main.storyboard in Resources */,
-				EBC2070221C72A8A0044329D /* GameScene.sks in Resources */,
 				EBC2070D21C72A8D0044329D /* Assets.xcassets in Resources */,
 				EBC2071021C72A8D0044329D /* LaunchScreen.storyboard in Resources */,
-				EBC2070421C72A8A0044329D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +178,8 @@
 			files = (
 				EBC2070621C72A8A0044329D /* GameScene.swift in Sources */,
 				EBC2070821C72A8A0044329D /* GameViewController.swift in Sources */,
+				EBC2071E21C74C0F0044329D /* MenuScene.swift in Sources */,
+				EBC2071C21C730E40044329D /* Settings.swift in Sources */,
 				EBC2070021C72A8A0044329D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
